@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,55 @@
     <title>DeboraMarcial-MiPortafolio</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">Portafolio</a>
         <div class="toggle"> </div>
         <ul>
-            <li><a href="#"></a>home</li>
-            <li><a href="#"></a>Experiencia</li>
-            <li><a href="#"></a>Proyectos</li>
-            <li><a href="#"></a>contacto</li>
-            <li><a href="#"></a>Educacion</li>
-
+            <li>
+                <a href="#">home</a></li>
+            <li>
+                <a href="#">Experiencia</a></li>
+            <li>
+                <a href="#">Proyectos</a></li>
+            <li>
+                <a href="#">contacto</a></li>
+            <li>
+                <a href="#">Educacion</a></li>
         </ul>
-
     </header>
     <section class="banner">
         <div class="textBx">
             <h2>Hola, soy <br><span> Debora </span></h2>
             <h3>soy desarrolladora full stack</h3>
             <a href="#" class="btn">Sobre mi</a>
-        </div>  
+        </div>
     </section>
-    <section>
-        <div class="heading"></div>
+    <section class="about">
+        <div class="heading">
             <h2>sobre mi</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>soy desarrolladora full stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab enim voluptates possimus ullam tempora voluptas optio? Vel molestiae dicta quas perspiciatis beatae optio similique? Cupiditate soluta necessitatibus delectus? Id, explicabo?
+                    <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta est temporibus sunt fuga veniam minus voluptatem voluptas enim laudantium ullam fugiat architecto dolor, velit amet suscipit similique ratione consectetur.</p>
+
+            </div>
+            <div class="w50">
+                <img src="img/img1.jpg" class="img">
+            </div>
+        </div>
     </section>
 
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+
 </body>
+
 </html>

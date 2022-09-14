@@ -2,34 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">    
     <title>DeboraMarcial-MiPortafolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
         <a href="#" class="logo">Portafolio</a>
-        <div class="toggle"> </div>
+        <div class="toggle"></div>
         <ul>
-            <li>
-                <a href="#">home</a></li>
-            <li>
-                <a href="#">Experiencia</a></li>
-            <li>
-                <a href="#">Proyectos</a></li>
-            <li>
-                <a href="#">contacto</a></li>
-            <li>
-                <a href="#">Educacion</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Experiencia</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Educacion</a></li>
+            <li><a href="#">contacto</a></li>
         </ul>
     </header>
     <section class="banner">
         <div class="textBx">
             <h2>Hola, soy <br><span> Debora </span></h2>
-            <h3>soy desarrolladora full stack</h3>
+            <h3>Soy desarrolladora full stack</h3>
             <a href="#" class="btn">Sobre mi</a>
         </div>
     </section>
@@ -39,19 +35,94 @@
         </div>
         <div class="content">
             <div class="contentBx w50">
-                <h3>soy desarrolladora full stack</h3>
+                <h3>Soy desarrolladora full stack</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab enim voluptates possimus ullam tempora voluptas optio? Vel molestiae dicta quas perspiciatis beatae optio similique? Cupiditate soluta necessitatibus delectus? Id, explicabo?
-                    <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta est temporibus sunt fuga veniam minus voluptatem voluptas enim laudantium ullam fugiat architecto dolor, velit amet suscipit similique ratione consectetur.</p>
-
+                    <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta est temporibus sunt fuga veniam minus voluptatem voluptas enim laudantium ullam fugiat architecto dolor, velit amet suscipit similique ratione consectetur.
+                </p>
             </div>
             <div class="w50">
-                <img src="img/img1.jpg" class="img">
+                <img src="img/planta1.png" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="heading white">
+            <h2>Experiencias</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. !</p>            
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="img/icon1.png" alt="">
+                <h2>web desing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>             
+            </div>
+            <div class="servicesBx">
+                <img src="img/icon1.png" alt="">
+                <h2>web desing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>             
+            </div>
+            <div class="servicesBx">
+                <img src="img/icon1.png" alt="">
+                <h2>web desing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>             
+            </div>
+        </div>
+
+    </section>
+    <section class="work">
+        <div class="heading">
+            <h2>Mis Proyectos</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. !</p>            
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="img/planta1.png" alt="">
+                <h2>Portafolio</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>  
+                <a href="#" class="btn">Link</a>           
+            </div>
+            <div class="workBx">
+                <img src="img/planta1.png" alt="">
+                <h2>plataforma cursos</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Link</a>             
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="heading white">
+            <h2>Contactos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa amet lab</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>contacto info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Ubicacion</h3>
+                            <p>Argentina-Tucumán-San Miguel De Tucumán</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="formBx">
+                <form action="">
+                    <h3>Mandame un msj</h3>
+                    <input type="text" name="" placeholder="Nombre Completo">
+                    <input type="email" name=""  placeholder="tu mail">
+                    <textarea placeholder="Tu mensaje"></textarea>
+                    <input type="submit" value="Send">
+                </form>
             </div>
         </div>
     </section>
 
     <script type="text/javascript">
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function() {// 
             let header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });

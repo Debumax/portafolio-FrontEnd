@@ -82,14 +82,21 @@ header.sticky {
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
+header .iconoHeader{
+    display: inline-flex;
+    width: 70px;
+    height: 70px;
+}
 
 header .logo {
     color: #fff;
-    font-size: 24px;
+    font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
+    text-align: right;
+    
 }
 
 header img {

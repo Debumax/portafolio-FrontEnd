@@ -92,6 +92,22 @@ header .logo {
     letter-spacing: 2px;
 }
 
+header img {
+    max-width: 10%;
+}
+
+.login {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header.sticky .login {
+    color: #111;
+}
+
 header.sticky .logo {
     color: #111;
 }
